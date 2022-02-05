@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam'
 import { Stack, StackProps, RemovalPolicy } from 'aws-cdk-lib'
 import { Construct } from 'constructs'
 
-interface StaticWebHostingStackProps extends StackProps {
+interface StaticSiteHostingStackProps extends StackProps {
   bucketName: string
   bucketRemovalPolicy: RemovalPolicy
   function?: cloudfront.Function
@@ -14,7 +14,7 @@ export class StaticSiteHostingStack extends Stack {
   constructor(
     scope: Construct,
     id: string,
-    props: StaticWebHostingStackProps
+    props: StaticSiteHostingStackProps
   ) {
     super(scope, id, props)
 

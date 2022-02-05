@@ -1,6 +1,6 @@
 {
-  "name": "cdk-static-site-hosting-stack",
-  "version": "0.2.0",
+  "name": "@integritis/cdk-static-site-hosting-stack",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
